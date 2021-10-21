@@ -10,8 +10,8 @@ total = input("What is the total bill? \n")
 
 tip = input("\nWhat percent tip would you like to give? \n")
 
-people = input("\nHow many peopple will split the bill? \n")
+people = input("\nHow many people will split the bill? \n")
 
-final = ( int(total) + (int(total) * (int(tip)/100)) ) / int(people)
+final = round(( float(total) + (float(total) * (int(tip)/100)) ) / int(people), 2)
 
 print(f"\nEach person should pay {final} dollars.")
